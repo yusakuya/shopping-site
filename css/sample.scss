@@ -25,34 +25,25 @@ body {
 header {
 
     #header {
-        padding-top: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     #logo {
         padding-top: 10px;
+        margin-bottom: 10px;
         width: 220px;
         @media (max-width: 550px){
             margin-left: 60px;
-            display: block;
         }
-    }
-    
-    #fb_icon {
-        margin-left: 120px;
-        margin-top: 20px;
-    }
-    
-    #insta_icon {
-        padding: 0px;
-        margin-left: 5px;
     }
 
     #menu_icon {
         cursor: pointer;
         margin-left: 0;
         position: absolute;
-        top: 103px;
-        left: 186px;
+        top: 110px;
+        left: 176px;
         @media (min-width: 550px){
             display: none;
         }
@@ -60,8 +51,8 @@ header {
 
     .menu_li_sp {
         position: absolute;
-        top: 40px;
-        right: 0%;
+        top: 60px;
+        right: 0;
         background: white;
         border: 1px solid #eee;
         margin: 0;
@@ -80,6 +71,19 @@ header {
         }
     }
 
+    #fb_icon {
+        margin-left: 10px;
+        margin-top: 0;
+        @media (max-width: 550px){
+            margin-left: 120px;
+        }
+    }
+    
+    #insta_icon {
+        padding: 0px;
+        margin-left: 0;
+    }
+
     @media (min-width: 550px){
         .menu_li_sp {
             display: none;
@@ -87,7 +91,7 @@ header {
         .menu_li_pc {
             display: inline-block;
             margin: 0;
-            padding-left: 300px;
+            padding-left: 20px;
             padding-bottom: 20px;
             li {
                 display: inline-block;
@@ -169,6 +173,22 @@ header {
     }
 }
 
+.cover {
+    margin-top: 20px;
+    .coverpc {
+        width: 100%;
+        @media (max-width: 550px){
+            display: none;
+        }
+    }
+    .coversp {
+        width: 100%;
+        @media (min-width: 550px){
+            display: none;
+        }
+    }
+}
+
 #categories {
     margin-top: 10px;
     .categories_img {
@@ -226,18 +246,21 @@ header {
     .image {
         width: 180px;
         margin-left: 10px;
-        @media (max-width: 550px){
-            width: 160px;
-            float: left;
+        img {
+            @media (max-width: 550px){
+                width: 160px;
+                float: left;
+            }
         }
     }
     .about_p {
         width: 180px;
-        margin-left: 10px;
+        margin-left: 5px;
         padding-bottom: 0;
         margin-bottom: 5px;
         @media (max-width: 550px){
-            width: 160px;
+            width: 140px;
+            margin-right: 10px;
             float: right;
         }
     }
@@ -267,19 +290,23 @@ header {
    .image{
        width: 180px;
        margin-left: 10px;
-        @media (max-width: 550px){
-            width: 160px;
-            float: left;
+       img {
+            @media (max-width: 550px){
+                width: 160px;
+                float: left;
+            }
         }
     }
     .shopinfo_p {
         width: 180px;
-        margin-left: 10px;
+        margin-left: 5px;
         margin-bottom: 0;
         padding-bottom: 5px;
         @media (max-width: 550px){
-            width: 160px;
+            width: 140px;
             float: right;
+            margin-right: 10px;
+
         }
     }
     .more {
@@ -303,8 +330,8 @@ header {
         }
     }
     .linea {
-        width: 60%;
-        margin-left: 60px;
+        width: 40%;
+        margin-left: 90px;
         @media (min-width: 550px){
             display: none;
         }
@@ -348,13 +375,14 @@ header {
     margin-bottom: 20px;
     .line {
         width: 100%;
+        margin-bottom: 20px;
         @media (max-width: 550px){
             display: none;
         }
     }
     .linea {
         width: 50%;
-        margin-left: 100px;
+        margin-left: 80px;
         @media (min-width: 550px){
             display: none;
         }
@@ -431,6 +459,7 @@ header {
         }
         @media (min-width: 550px){
             width: 45%;
+            height: 350px;
             margin: 0 2px 0 0;
             padding: 10px;
         }
@@ -465,6 +494,7 @@ header {
         }
         @media (min-width: 550px){
             width: 43%;
+            height: 350px;
             margin: 0;
             padding: 10px;
         }
@@ -577,6 +607,7 @@ footer {
         
     }
     .line {
+        margin-top: 20px;
         margin-bottom: 10px;
         @media (max-width: 550px){
             display: none;
@@ -623,25 +654,37 @@ footer {
     background-color: white;
     padding: 40px;
     margin-top: 10px;
-    h2 {
-        display: inline-block;
-        margin: 10px 20px 0 0;
-        padding: 0;
-        font-weight: bold;
-        @include fontsize(20);
+    hr {
+        background-color: $brown1;
     }
-    h5 {
-        display: inline-block;
-        margin-top: 15px;
-        margin-left: 350px;
-        padding: 0;
-        color: $gray;
-        @include fontsize(15);
-        @media (max-width: 550px){
-            margin-left: 0;
+    .protitle {
+        border-bottom: 1px solid $brown2;
+        h2 {
+            display: inline-block;
+            margin: 10px 20px 0 0;
+            padding: 0;
+            font-weight: bold;
+            @include fontsize(20);
+        }
+        h5 {
+            display: inline-block;
+            margin-top: 15px;
+            margin-left: 350px;
+            padding: 0;
+            color: $gray;
+            @include fontsize(15);
+            @media (max-width: 550px){
+                margin-left: 0;
+            }
         }
     }
     .productlist {
+        padding-bottom: 500px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $brown2;
+        @media (max-width: 550px){
+            padding-bottom: 450px;
+        }
         .mainimage {
             width: 70%;
             height: 430px;
@@ -683,6 +726,7 @@ footer {
         clear: both;
     }
     .pro_color {
+        border-bottom: 1px solid $brown2;
         img {
             margin-top: 0;
             margin-bottom: 20px;
@@ -696,11 +740,12 @@ footer {
         table {
             width: 90%;
             margin-left: 20px;
+            color: $brown1;
             .color {
                 background-color: $brown2;
             }
             .check {
-                padding-top: 10px;
+                padding-top: 20px;
                 padding-left: 80px;
             }
             @media (max-width: 550px){
@@ -732,82 +777,97 @@ footer {
         @media (max-width: 550px){
             margin-bottom: 0;
         }
-        .price {
+        .priceall {
             float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-            display: inline-block;
-            @media (max-width: 550px){
-                margin-top: 10px;
-                margin-left: 10px;
-            }
-        }
-        .price_a {
-            display: inline-block;
-            margin-left: 50px;
-            @media (max-width: 550px){
-                @include fontsize(20);
-            }
-            span {
-                color: red;
-                font-style: Italic;
-            }
-        }
-        .hr1 {
-            @media (max-width: 550px){
-                padding-bottom: 20px;
-            }
-        }
-        .hr2 {
-            @media (max-width: 550px){
-                padding-top: 0;
-                margin-top: 0;
-            }
-        }
-        .add_to_cart {
-            width: 40%;
-            height: 70px;
-            display: inline-block;
-            float: right;
-            @media (max-width: 550px){
-                width: 60%;
-                height: 50px;
-                position: relative;
-                top: 220px;
+            margin-bottom: 40px;
+        .pricea {
+            border-bottom: 1px solid $brown2;
+            .price {
                 float: left;
-                margin-left: 50px;
-                
+                margin-top: 20px;
+                margin-left: 20px;
+                display: inline-block;
+                @media (max-width: 550px){
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+            }
+            .price_a {
+                display: inline-block;
+                margin-left: 80px;
+                @media (max-width: 550px){
+                    @include fontsize(20);
+                }
+                span {
+                    color: red;
+                    font-style: Italic;
+                }
             }
         }
-
-        .price_b {
-            margin-left: 40px;
-            margin-bottom: 0;
-            padding-bottom: 0;
+        .priceb {
+            margin-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $brown2;
             @media (max-width: 550px){
-                float: left;
+                padding-bottom: 70px;
             }
-        }
+            .price {
+                float: left;
+                margin-top: 20px;
+                margin-left: 20px;
+                display: inline-block;
+                @media (max-width: 550px){
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+            }
+            .price_b {
+                display: inline-block;
+                margin-left: 40px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                @media (max-width: 550px){
+                    float: left;
+                }
+            }
         input {
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 5px;
             width: 200px;
             border-radius: 0;
             @media (max-width: 550px){
                 width: 120px;
                 float: right;
             }
-        }
         a {
             margin-top: 0;
             margin-right: 10px;
             color: black;
             text-decoration: none;
         }
+        }
     }
+    }
+    .add_to_cart {
+        width: 40%;
+        height: 70px;
+        display: inline-block;
+        float: right;
+        @media (max-width: 550px){
+            width: 60%;
+            height: 50px;
+            margin-left: 50px;
+            float: left;
+        }
+    }
+}
+
     .pro_setsumei {
         margin-top: 50px;
         color: $brown1;
         @media (max-width: 550px){
-            margin-top: 80px;
+            margin-top: 100px;
         }
         h6 {
             font-weight: bold;
