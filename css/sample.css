@@ -14,16 +14,8 @@ header #logo {
   width: 220px; }
   @media (max-width: 550px) {
     header #logo {
-      margin-left: 60px; } }
-header #menu_icon {
-  cursor: pointer;
-  margin-left: 0;
-  position: absolute;
-  top: 110px;
-  left: 176px; }
-  @media (min-width: 550px) {
-    header #menu_icon {
-      display: none; } }
+      margin-left: 110px;
+      width: 100px; } }
 header .menu_li_sp {
   position: absolute;
   top: 60px;
@@ -47,10 +39,19 @@ header #fb_icon {
   margin-top: 0; }
   @media (max-width: 550px) {
     header #fb_icon {
-      margin-left: 120px; } }
+      margin-left: 110px; } }
 header #insta_icon {
   padding: 0px;
   margin-left: 0; }
+  @media (max-width: 550px) {
+    header #insta_icon {
+      margin-left: 5px; } }
+header #menu_icon {
+  cursor: pointer;
+  margin-left: 5px; }
+  @media (min-width: 550px) {
+    header #menu_icon {
+      display: none; } }
 @media (min-width: 550px) {
   header .menu_li_sp {
     display: none; }
@@ -188,7 +189,7 @@ header #insta_icon {
     margin-left: 10px; }
     @media (max-width: 550px) {
       #about .image img {
-        width: 160px;
+        width: 80%;
         float: left; } }
   #about .about_p {
     width: 180px;
@@ -197,7 +198,9 @@ header #insta_icon {
     margin-bottom: 5px; }
     @media (max-width: 550px) {
       #about .about_p {
-        width: 140px;
+        width: 40%;
+        font-size: 13px;
+        font-size: 1.3rem;
         margin-right: 10px;
         float: right; } }
   #about .more {
@@ -225,7 +228,7 @@ header #insta_icon {
     margin-left: 10px; }
     @media (max-width: 550px) {
       #shopinfo .image img {
-        width: 160px;
+        width: 80%;
         float: left; } }
   #shopinfo .shopinfo_p {
     width: 180px;
@@ -234,7 +237,9 @@ header #insta_icon {
     padding-bottom: 5px; }
     @media (max-width: 550px) {
       #shopinfo .shopinfo_p {
-        width: 140px;
+        width: 40%;
+        font-size: 13px;
+        font-size: 1.3rem;
         float: right;
         margin-right: 10px; } }
   #shopinfo .more {
@@ -249,14 +254,18 @@ header #insta_icon {
 #new_items {
   margin-top: 20px;
   margin-left: 20px; }
+  @media (max-width: 550px) {
+    #new_items {
+      margin-top: 0; } }
   #new_items .line {
     width: 100%; }
     @media (max-width: 550px) {
       #new_items .line {
         display: none; } }
   #new_items .linea {
-    width: 40%;
-    margin-left: 90px; }
+    width: 30%;
+    margin-top: 0;
+    margin-left: 100px; }
     @media (min-width: 550px) {
       #new_items .linea {
         display: none; } }
@@ -276,18 +285,23 @@ header #insta_icon {
       @media (max-width: 550px) {
         #new_items .newitems_li li {
           width: 45%;
-          margin: 0 0 5px 0;
+          margin-bottom: 1px;
           padding-top: 5px;
-          padding-left: 5px; } }
+          padding-left: 5px;
+          padding-bottom: 0; } }
       #new_items .newitems_li li p {
-        width: 90%; }
+        width: 90%;
+        font-size: 11px;
+        font-size: 1.1rem;
+        margin: 0;
+        padding-bottom: 10px; }
       #new_items .newitems_li li img {
         width: 90%;
         height: 180px; }
         @media (max-width: 550px) {
           #new_items .newitems_li li img {
-            width: 90%;
-            height: 120px; } }
+            width: 95%;
+            height: 150px; } }
 
 #popular_items {
   margin-top: 20px;
@@ -299,41 +313,44 @@ header #insta_icon {
       #popular_items .line {
         display: none; } }
   #popular_items .linea {
-    width: 50%;
-    margin-left: 80px; }
+    width: 40%;
+    margin-left: 100px; }
     @media (min-width: 550px) {
       #popular_items .linea {
         display: none; } }
   #popular_items .popularitems_li {
     width: 100%;
     display: inline-block;
-    padding-top: 10px;
-    padding-left: 0; }
+    margin-top: 10px;
+    margin-left: 0; }
     #popular_items .popularitems_li li {
       width: 30%;
       display: inline-block;
       list-style: none;
       padding-top: 10px;
-      padding-left: 20px;
+      padding-left: 15px;
       margin: 4px 0 0 0;
       background-color: white; }
       @media (max-width: 550px) {
         #popular_items .popularitems_li li {
           width: 45%;
-          margin: 0 0 5px 0;
+          margin-bottom: 1px;
           padding-top: 5px;
-          padding-left: 5px; } }
+          padding-left: 5px;
+          padding-bottom: 0; } }
       #popular_items .popularitems_li li p {
         width: 90%;
-        padding-right: 0;
-        margin-right: 0; }
+        font-size: 12px;
+        font-size: 1.2rem;
+        margin: 0;
+        padding-bottom: 10px; }
       #popular_items .popularitems_li li img {
         width: 90%;
         height: 180px; }
         @media (max-width: 550px) {
           #popular_items .popularitems_li li img {
-            width: 90%;
-            height: 120px; } }
+            width: 95%;
+            height: 150px; } }
 
 #extra {
   width: 100%; }
@@ -344,62 +361,76 @@ header #insta_icon {
       #extra .line {
         display: none; } }
   #extra .linea {
-    width: 60%;
-    margin-left: 70px; }
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 10px; }
     @media (min-width: 550px) {
       #extra .linea {
         display: none; } }
   #extra .otodoke {
     float: left;
     width: 90%;
-    height: 300px;
+    height: 250px;
     display: inline-block;
     background-color: white;
-    margin: 10px;
-    padding: 10px; }
+    margin: 0;
+    padding: 20px; }
     #extra .otodoke h1 {
       color: #887f69;
       font-weight: bold;
-      margin-top: 5px; }
-    #extra .otodoke h2 {
-      color: #887f69;
-      font-weight: bold;
-      margin-top: 5px; }
-    @media (min-width: 550px) {
-      #extra .otodoke {
-        width: 45%;
-        height: 350px;
-        margin: 0 2px 0 0;
-        padding: 10px; } }
-    #extra .otodoke h1 {
+      margin: 0;
+      padding: 0;
       font-size: 20px;
       font-size: 2rem; }
     #extra .otodoke h2 {
+      color: #887f69;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
       font-size: 15px;
       font-size: 1.5rem; }
+    #extra .otodoke p {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: 0; }
+    #extra .otodoke img {
+      margin: 10px; }
+    @media (min-width: 550px) {
+      #extra .otodoke {
+        width: 45%;
+        height: 250px;
+        margin: 0 2px 0 0;
+        padding: 10px; } }
   #extra .kessai {
     float: left;
     width: 90%;
-    height: 300px;
+    height: 250px;
     display: inline-block;
     background-color: white;
-    margin: 10px;
-    padding: 10px;
-    padding-bottom: 20px; }
+    margin: 5px;
+    padding: 20px; }
     #extra .kessai h1 {
       color: #887f69;
       font-weight: bold;
-      margin-top: 5px; }
+      margin-bottom: 10px;
+      padding: 0; }
     #extra .kessai h2 {
       color: #887f69;
       font-weight: bold;
-      margin-top: 5px; }
+      margin: 0;
+      padding: 0; }
+    #extra .kessai p {
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px; }
     #extra .kessai .cards {
-      width: 300px; }
+      width: 280px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
     @media (min-width: 550px) {
       #extra .kessai {
         width: 43%;
-        height: 350px;
+        height: 250px;
         margin: 0;
         padding: 10px; } }
     #extra .kessai h1 {
@@ -419,8 +450,8 @@ footer {
         float: right; } }
   footer p {
     text-align: center;
-    font-size: 15px;
-    font-size: 1.5rem; }
+    font-size: 14px;
+    font-size: 1.4rem; }
     @media (min-width: 550px) {
       footer p {
         font-size: 15px;
@@ -450,6 +481,7 @@ footer {
   border: 0;
   border-radius: 2px;
   background-color: #e2ddd4;
+  color: #b0b0b0;
   background-image: url("../images/list/home_icon.png");
   background-repeat: no-repeat;
   background-position: 15px 16px;
@@ -457,45 +489,41 @@ footer {
   margin: 0; }
   .pan a {
     text-decoration: none;
-    color: black; }
+    color: #887f69; }
 
 #list {
   width: 100%;
   display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0; }
-  #list h2 {
-    font-size: 20px;
-    font-size: 2rem;
-    margin-bottom: 10px; }
-  #list hr {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 20px; }
+  margin-top: 10px;
+  margin-left: 0; }
   #list li {
     width: 30%;
     display: inline-block;
     list-style: none;
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 15px;
     margin: 4px 0 0 0;
     background-color: white; }
     @media (max-width: 550px) {
       #list li {
         width: 45%;
-        margin: 0 0 5px 0;
+        margin-bottom: 1px;
         padding-top: 5px;
-        padding-left: 5px; } }
+        padding-left: 5px;
+        padding-bottom: 0; } }
+    #list li p {
+      width: 90%;
+      font-size: 12px;
+      font-size: 1.2rem;
+      margin: 0;
+      padding-bottom: 10px; }
     #list li img {
       width: 90%;
-      height: 200px; }
+      height: 180px; }
       @media (max-width: 550px) {
         #list li img {
-          height: 120px; } }
-    @media (max-width: 550px) {
-      #list li p {
-        width: 90%; } }
+          width: 95%;
+          height: 150px; } }
   #list .line {
     margin-top: 20px;
     margin-bottom: 10px; }
@@ -503,10 +531,10 @@ footer {
       #list .line {
         display: none; } }
   #list .linea {
-    width: 40%;
-    margin-left: 100px;
+    width: 30%;
+    margin-left: 110px;
     margin-bottom: 10px;
-    margin-top: 20px; }
+    margin-top: 40px; }
     @media (min-width: 550px) {
       #list .linea {
         display: none; } }
@@ -521,7 +549,10 @@ footer {
     text-decoration: none; }
     @media (max-width: 550px) {
       #list .backbutton {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        width: 230px;
+        height: 60px;
+        padding: 15px 50px; } }
   #list .nextbutton {
     width: 100px;
     height: 50px;
@@ -533,16 +564,23 @@ footer {
     text-decoration: none; }
     @media (max-width: 550px) {
       #list .nextbutton {
-        margin-left: 160px; } }
+        margin-left: 50px;
+        width: 230px;
+        height: 60px;
+        padding: 15px 50px; } }
 
 #products {
   background-color: white;
   padding: 40px;
   margin-top: 10px; }
+  @media (max-width: 550px) {
+    #products {
+      padding: 10px;
+      margin-top: 0; } }
   #products hr {
     background-color: #887f69; }
   #products .protitle {
-    border-bottom: 1px solid #e2ddd4; }
+    border-bottom: 1px solid #e8e4da; }
     #products .protitle h2 {
       display: inline-block;
       margin: 10px 20px 0 0;
@@ -560,14 +598,17 @@ footer {
       font-size: 1.5rem; }
       @media (max-width: 550px) {
         #products .protitle h5 {
-          margin-left: 0; } }
+          margin-top: 0px;
+          margin-left: 0px;
+          margin-bottom: 20px;
+          display: block; } }
   #products .productlist {
     padding-bottom: 500px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #e2ddd4; }
+    border-bottom: 1px solid #e8e4da; }
     @media (max-width: 550px) {
       #products .productlist {
-        padding-bottom: 450px; } }
+        padding-bottom: 500px; } }
     #products .productlist .mainimage {
       width: 70%;
       height: 430px;
@@ -579,10 +620,10 @@ footer {
       @media (max-width: 550px) {
         #products .productlist .mainimage {
           width: 100%;
-          height: 320px; }
+          height: 370px; }
           #products .productlist .mainimage img {
             width: 100%;
-            height: 250px; } }
+            height: 360px; } }
     #products .productlist .pro_list {
       list-style: none; }
       #products .productlist .pro_list li {
@@ -594,14 +635,15 @@ footer {
         margin: 10px; }
         @media (max-width: 550px) {
           #products .productlist .pro_list img {
-            width: 16%;
-            height: 40px;
+            width: 18.5%;
+            height: 50px;
             margin: 2px;
             float: left; } }
   #products .clear {
     clear: both; }
   #products .pro_color {
-    border-bottom: 1px solid #e2ddd4; }
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8e4da; }
     #products .pro_color img {
       margin-top: 0;
       margin-bottom: 20px;
@@ -616,7 +658,7 @@ footer {
       margin-left: 20px;
       color: #887f69; }
       #products .pro_color table .color {
-        background-color: #e2ddd4; }
+        background-color: #f9f9f5; }
       #products .pro_color table .check {
         padding-top: 20px;
         padding-left: 80px; }
@@ -643,10 +685,14 @@ footer {
     margin-top: 40px; }
     @media (max-width: 550px) {
       #products .pro_ex {
+        margin-top: 20px;
         margin-bottom: 0; } }
     #products .pro_ex .priceall {
       float: left;
       margin-bottom: 40px; }
+      @media (max-width: 550px) {
+        #products .pro_ex .priceall {
+          margin-bottom: 10px; } }
       #products .pro_ex .priceall .pricea {
         border-bottom: 1px solid #e2ddd4; }
         #products .pro_ex .priceall .pricea .price {
@@ -671,10 +717,11 @@ footer {
       #products .pro_ex .priceall .priceb {
         margin-top: 30px;
         padding-bottom: 10px;
-        border-bottom: 1px solid #e2ddd4; }
+        border-bottom: 1px solid #e8e4da; }
         @media (max-width: 550px) {
           #products .pro_ex .priceall .priceb {
-            padding-bottom: 70px; } }
+            margin-top: 5px;
+            padding-bottom: 50px; } }
         #products .pro_ex .priceall .priceb .price {
           float: left;
           margin-top: 20px;
@@ -723,10 +770,22 @@ footer {
     color: #887f69; }
     @media (max-width: 550px) {
       #products .pro_setsumei {
-        margin-top: 100px; } }
+        margin-top: 30px; } }
+    #products .pro_setsumei h2 {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #887f69; }
+      @media (max-width: 550px) {
+        #products .pro_setsumei h2 {
+          font-size: 20px;
+          font-size: 2rem;
+          font-weight: bold; } }
     #products .pro_setsumei h6 {
+      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: bold; }
     #products .pro_setsumei p {
+      font-size: 14px;
+      font-size: 1.4rem;
       color: black; }
     #products .pro_setsumei table {
       width: 100%; }
@@ -739,7 +798,7 @@ footer {
           padding-right: 10px;
           padding-left: 10px; } }
     #products .pro_setsumei .color {
-      background-color: #e2ddd4; }
+      background-color: #f9f9f5; }
       @media (max-width: 550px) {
         #products .pro_setsumei .color {
           width: 50px; } }
@@ -751,34 +810,45 @@ footer {
     .kanren .line {
       display: none; } }
 .kanren .linea {
-  width: 40%;
-  margin-left: 90px;
+  width: 30%;
+  margin-left: 100px;
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
   @media (min-width: 550px) {
     .kanren .linea {
       display: none; } }
-.kanren .kanren_list li {
-  width: 29%;
+.kanren .kanren_list {
+  width: 100%;
   display: inline-block;
-  list-style: none;
-  padding-top: 10px;
-  padding-left: 20px;
-  margin: 4px 0 0 0;
-  background-color: white; }
-  @media (max-width: 550px) {
-    .kanren .kanren_list li {
-      width: 45%;
-      margin: 0 0 5px 0;
-      padding-top: 5px;
-      padding-left: 5px; } }
-  .kanren .kanren_list li img {
-    width: 90%;
-    height: 170px; }
+  margin-top: 10px;
+  margin-left: 0; }
+  .kanren .kanren_list li {
+    width: 30%;
+    display: inline-block;
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin: 4px 0 0 0;
+    background-color: white; }
     @media (max-width: 550px) {
-      .kanren .kanren_list li img {
-        height: 130px; }
-        .kanren .kanren_list li img p {
-          width: 90%; } }
+      .kanren .kanren_list li {
+        width: 45%;
+        margin-bottom: 1px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 0; } }
+    .kanren .kanren_list li p {
+      width: 90%;
+      font-size: 12px;
+      font-size: 1.2rem;
+      margin: 0;
+      padding-bottom: 10px; }
+    .kanren .kanren_list li img {
+      width: 90%;
+      height: 180px; }
+      @media (max-width: 550px) {
+        .kanren .kanren_list li img {
+          width: 95%;
+          height: 150px; } }
 
 /*# sourceMappingURL=sample.css.map */
