@@ -14,11 +14,12 @@ header #logo {
   width: 70%; }
   @media (max-width: 550px) {
     header #logo {
-      margin-left: 110px;
-      width: 100px; } }
+      margin: auto;
+      display: block;
+      width: 150px; } }
 header .menu_li_sp {
   position: absolute;
-  top: 60px;
+  top: 130px;
   right: 0;
   background: white;
   border: 1px solid #eee;
@@ -40,18 +41,15 @@ header #icon_list {
   @media (max-width: 550px) {
     header #icon_list {
       display: none; } }
-@media (min-width: 550px) {
-  header #icon_list_sp {
-    display: none; } }
-@media (max-width: 550px) {
-  header #fb_icon {
-    margin-left: 33%; } }
-@media (max-width: 550px) {
-  header #insta_icon {
-    margin-left: 5px; } }
+header #icon_list_sp {
+  width: 80px;
+  margin: auto;
+  padding-top: 15px; }
+  @media (min-width: 550px) {
+    header #icon_list_sp {
+      display: none; } }
 header #menu_icon {
-  cursor: pointer;
-  margin-left: 5px; }
+  cursor: pointer; }
   @media (min-width: 550px) {
     header #menu_icon {
       display: none; } }
@@ -112,7 +110,7 @@ header #menu_icon {
       color: #d9d9d9; }
       @media (max-width: 550px) {
         #search form .search_form input {
-          width: 300px;
+          width: 90%;
           height: 40px;
           margin-top: 15px;
           margin-left: 8px;
@@ -250,8 +248,7 @@ header #menu_icon {
 
 #new_items {
   width: 100%;
-  margin-top: 20px;
-  margin-left: 0; }
+  margin-top: 20px; }
   @media (max-width: 550px) {
     #new_items {
       margin-top: 0; } }
@@ -286,7 +283,7 @@ header #menu_icon {
           width: 47.5%;
           margin-bottom: 1px;
           padding-top: 5px;
-          padding-left: 5px;
+          padding-left: 4px;
           padding-bottom: 0; } }
       #new_items .newitems_li li p {
         width: 90%;
@@ -334,7 +331,7 @@ header #menu_icon {
           width: 47.5%;
           margin-bottom: 1px;
           padding-top: 5px;
-          padding-left: 5px;
+          padding-left: 4px;
           padding-bottom: 0; } }
       #popular_items .popularitems_li li p {
         width: 90%;
@@ -366,8 +363,8 @@ header #menu_icon {
         display: none; } }
   #extra .otodoke {
     padding: 10px;
-    width: 100%;
-    height: 250px;
+    box-sizing: border-box;
+    height: 270px;
     background-color: white; }
     #extra .otodoke h1 {
       color: #887f69;
@@ -389,7 +386,9 @@ header #menu_icon {
       padding-top: 0;
       padding-bottom: 20px;
       padding-left: 10px;
-      margin: 0; }
+      margin: 0;
+      font-size: 12px;
+      font-size: 1.2rem; }
     #extra .otodoke img {
       padding-left: 10px;
       width: 50%;
@@ -403,8 +402,8 @@ header #menu_icon {
         display: inline-block; } }
   #extra .kessai {
     padding: 10px;
-    width: 100%;
-    height: 250px;
+    box-sizing: border-box;
+    height: 270px;
     background-color: white;
     margin-top: 20px;
     margin-bottom: 20px; }
@@ -424,7 +423,9 @@ header #menu_icon {
       margin: 0;
       padding-top: 5px;
       padding-bottom: 10px;
-      padding-left: 10px; }
+      padding-left: 10px;
+      font-size: 12px;
+      font-size: 1.2rem; }
     #extra .kessai .cards {
       width: 90%;
       margin-top: 10px;
@@ -527,7 +528,7 @@ footer {
         width: 47.5%;
         margin-bottom: 1px;
         padding-top: 5px;
-        padding-left: 5px;
+        padding-left: 4px;
         padding-bottom: 0; } }
     #list li p {
       width: 90%;
@@ -696,7 +697,8 @@ footer {
       font-size: 1.2rem; }
       @media (max-width: 550px) {
         #products .pro_color td {
-          padding-left: 8%; } }
+          padding-left: 8%;
+          padding-right: 15px; } }
   #products .pro_ex {
     margin-top: 0; }
     @media (max-width: 550px) {
@@ -855,7 +857,7 @@ footer {
         width: 47.5%;
         margin-bottom: 1px;
         padding-top: 5px;
-        padding-left: 5px;
+        padding-left: 4px;
         padding-bottom: 0; } }
     .kanren .kanren_list li p {
       width: 90%;
